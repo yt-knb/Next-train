@@ -23,17 +23,17 @@ fontsize = int(tate / 18)
 w = tk.Canvas(clock, width = yoko, height = tate, background = '#000000')
 w.pack()
 
-heijitu = pd.read_excel('上り時刻表.xlsx', '平日', header = None, index_col = None)
-kyujitu = pd.read_excel('上り時刻表.xlsx', '休日', header = None, index_col = None)
-heigo = pd.read_excel('上り時刻表.xlsx', '平日行先', header = None, index_col = None)
-kyugo = pd.read_excel('上り時刻表.xlsx', '休日行先', header = None, index_col = None)
-heiskp = pd.read_excel('上り時刻表.xlsx', '平日運行', header = None, index_col = None)
-kyuskp = pd.read_excel('上り時刻表.xlsx', '休日運行', header = None, index_col = None)
+heijitu = pd.read_excel('inbound.xlsx', '平日', header = None, index_col = None)
+kyujitu = pd.read_excel('inbound.xlsx', '休日', header = None, index_col = None)
+heigo = pd.read_excel('inbound.xlsx', '平日行先', header = None, index_col = None)
+kyugo = pd.read_excel('inbound.xlsx', '休日行先', header = None, index_col = None)
+heiskp = pd.read_excel('inbound.xlsx', '平日運行', header = None, index_col = None)
+kyuskp = pd.read_excel('inbound.xlsx', '休日運行', header = None, index_col = None)
 
-heijitu2 = pd.read_excel('下り時刻表.xlsx', '平日', header = None, index_col = None)
-kyujitu2 = pd.read_excel('下り時刻表.xlsx', '休日', header = None, index_col = None)
-heigo2 = pd.read_excel('下り時刻表.xlsx', '平日行先', header = None, index_col = None)
-kyugo2 = pd.read_excel('下り時刻表.xlsx', '休日行先', header = None, index_col = None)
+heijitu2 = pd.read_excel('outbound.xlsx', '平日', header = None, index_col = None)
+kyujitu2 = pd.read_excel('outbound.xlsx', '休日', header = None, index_col = None)
+heigo2 = pd.read_excel('outbound.xlsx', '平日行先', header = None, index_col = None)
+kyugo2 = pd.read_excel('outbound.xlsx', '休日行先', header = None, index_col = None)
 
 hei_time = heijitu.values
 hei_go = heigo.values
