@@ -14,3 +14,5 @@ time
 datetime  
 jpholiday  
 concurrent.futures  
+  
+importしていないが，xlrdも必要  
